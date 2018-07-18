@@ -1,0 +1,72 @@
+!!!
+%html{:lang => "pl"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Kontakt
+    %link{:href => "style.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "bootstrap/css/bootstrap.min.css", :rel => "stylesheet"}/
+    %script{:src => "js.js"}
+    :css
+      .panel 
+      {
+      	width:80%;
+      }
+  %body
+    .container
+      .navbar.navbar-default{:role => "navigation"}
+        .container-fluid
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            %ul.nav.navbar-nav
+              %li.active
+                %a{:href => "#"} O mnie
+              %li
+                %a{:href => "#"} Kontakt
+            %ul.nav.navbar-nav.navbar-right
+              %li
+                %a{:href => "#"} Logowanie
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Konto
+                  %span.caret
+                %ul.dropdown-menu{:role => "menu"}
+                  %li
+                    %a{:href => "#"} Wyloguj
+          
+          / /.navbar-collapse
+        / /.container-fluid
+      .logo
+        %span{:style => "width: 100%; height:220px;"}
+          %img{:src => "zasoby/logo.jpg"}/
+      .row
+        .navbar.navbar-default{:role => "navigation"}
+          %ul.nav.navbar-nav
+            %li
+              %a{:href => "#"} Powrót do strony głównej
+            %li
+              %a{:href => "#"} Kategoria1
+            %li
+              %a{:href => "#"} Kategoria2
+            %li
+              %a{:href => "#"} Kategoria3
+      .panel.panel-default
+        .panel-body
+          .row.col-lg-12.col-xs-12.col-md-12
+            %form{:role => "form"}
+              .form-group
+                %label{:for => "exampleSubject1"} Tytuł
+                %input#exampleInputSubject1.form-control{:placeholder => "Tytuł", :type => "exampleSubject1"}/
+              .form-group
+                %label{:for => "exampleInputEmail1"} Email
+                %input#exampleInputEmail1.form-control{:placeholder => "Podaj adres Email", :type => "email"}/
+              .form-group
+                %textarea.form-control{:placeholder => "Napisz wiadomość...", :rows => "15"}
+              .form-group
+                %label{:for => "exampleInputFile"} Załączanie pliku
+                %input#exampleInputFile{:type => "file"}/
+                %p.help-block Maksymalny rozmiar pliku: 5MB
+              .checkbox
+                %label
+                  %input{:type => "checkbox"}/
+                  Nie jestem robotem!
+              %button.btn.btn-default{:type => "submit"} Wyślij
+        .navbar.navbar-default.footer

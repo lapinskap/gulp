@@ -13,7 +13,9 @@
 * [Contact](#contact)
 
 ## General info
-Add more general information about project. What the purpose of the project is? Motivation?
+
+I wanted to test gulp, translate sass to css, haml to html. This is a general repository in which I will compare similar frontend technologies. Rather it does not create a consistent application, sooner a several separate views.
+
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
@@ -26,8 +28,14 @@ Add more general information about project. What the purpose of the project is? 
 
 ## Setup
 
-```
+There is no nessecary setup. Gulp tasks usage:
 
+```
+gulp hello
+
+gulp sass
+
+gulp haml
 ```
 
 ## Code Examples
@@ -59,7 +67,7 @@ To-do list:
 ## Status
 Project is: _in progress_ 
 
-I'm going to add some HAML files in the future to train the syntax
+I'm going to add some HAML files in the future to train the syntax.
 
 ## Inspiration
 > Some unusual inspiration
